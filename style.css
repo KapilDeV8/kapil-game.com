@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Oswald:wght@446&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.whole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    margin: 20vh 20vw;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.box:hover{
+    background: rgba(128, 128, 128, 0.479);
+}
+
+.center{
+    border: 2px solid black;
+}
+
+.left{border-left: 2px solid black;}
+.top{border-top:  2px solid black;}
+.bottom{border-bottom:  2px solid black;}
+.right{border-right:  2px solid black;}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-right: 150px;
+}
+
+.line{
+    width: 250px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+
+.Reset{
+    width: 150px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(190, 190, 190);
+    font-size:  17px;
+}
+
+.moves, .turns {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.message{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 8px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
